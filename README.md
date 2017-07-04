@@ -6,7 +6,7 @@
 ### Install
 
 ``` bash
-npm i vue-core-image-upload --save
+npm i address-picker --save
 ```
 
 Code Example (ES6)
