@@ -73,12 +73,12 @@
       onValuesChange (picker, values) {
         // 防止没有省份时报错
         if (values[0]) {
-          this.slots[1].values = values[0].city;
+          this.slots[1].values = picker.setSlotValues(1, values[0].city);
           this.selectedAddress.province = {id : values[0].id, name : values[0].name};
         }
         // 防止没有市时报错
         if (values[1]) {
-          this.slots[2].values = values[1].district
+          this.slots[2].values = picker.setSlotValues(2, values[1].district)
           this.selectedAddress.city = {id : values[1].id, name : values[1].name};
         }
         // 防止没有区时报错
